@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       resources :assignments do
         resources :grades
       end
-      get 'students', to: 'courses#students', on: :member
+      get 'enrollments', to: 'enrollments#index', on: :member
     end
     resources :people
 
